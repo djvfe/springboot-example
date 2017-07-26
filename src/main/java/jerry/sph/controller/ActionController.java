@@ -13,8 +13,8 @@ public class ActionController {
         return "Hello World!";  
     }
 	
-	@RequestMapping("/{path}")
-	public String index(@PathVariable("path") String path) {
-		return path;
+	@RequestMapping("/user/{user}")
+	public String user(@PathVariable("user") String user) {
+		return "hello,"+user;
 	}
 }
