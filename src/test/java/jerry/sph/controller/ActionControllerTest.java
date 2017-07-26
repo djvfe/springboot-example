@@ -1,4 +1,4 @@
-package test.jerry.sph.controller;
+package jerry.sph.controller;
 
 import org.junit.Before;
 import org.junit.Test;
