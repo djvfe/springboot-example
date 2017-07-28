@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>jerry</groupId>
-  <artifactId>sph</artifactId>
+  <artifactId>sbe</artifactId>
   <packaging>jar</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>sph Maven Webapp</name>
@@ -26,6 +26,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>springhelper</finalName>
+    <finalName>springboot-example</finalName>
   </build>
 </project>

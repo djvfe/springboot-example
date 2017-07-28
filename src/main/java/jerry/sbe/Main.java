@@ -1,9 +1,9 @@
-package jerry.sph;
+package jerry.sbe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 
-import jerry.sph.controller.ActionController;
+import jerry.sbe.controller.ActionController;
 
 @SpringBootConfiguration
 public class Main {

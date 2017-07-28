@@ -1,4 +1,4 @@
-package jerry.sph.controller;
+package jerry.sbe.controller;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.PathVariable;
