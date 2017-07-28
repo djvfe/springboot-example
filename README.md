@@ -1,2 +1,2 @@
-# springhelper
-帮助使用spring快速构建应用
+# springboot-example
+springboot的例子,帮助使用springboot快速构建应用
