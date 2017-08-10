@@ -30,14 +30,14 @@ public class ActionControllerTest {
     public void home() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Hello World!")));
+                .andExpect(content().string(equalTo("{\"status\":true,\"code\":200,\"message\":\"\",\"data\":\"Hello World!\"}")));
     }
 
     @Test
     public void user() throws Exception {
         mvc.perform(MockMvcRequestBuilders.get("/user/jerry").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("hello,jerry")));
+                .andExpect(content().string(equalTo("{\"status\":true,\"code\":200,\"message\":\"\",\"data\":\"jerry\"}")));
     }
 
 }

@@ -5,16 +5,20 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import jerry.sbe.ResponseData;
+
 @RestController
 @EnableAutoConfiguration  
-public class ActionController {
-	@RequestMapping("/")  
-    String home() {  
-        return "Hello World!";  
+public class ActionController extends ExceptionController {
+	@RequestMapping("/") 
+	public ResponseData home() {  
+        return new ResponseData("Hello World!");  
     }
 	
 	@RequestMapping("/user/{user}")
-	public String user(@PathVariable("user") String user) {
-		return "hello,"+user;
+	public ResponseData user(@PathVariable("user") String user) {
+		ResponseData responseData = new ResponseData(user);
+//		return "hello,"+user;
+		return responseData;
 	}
 }
